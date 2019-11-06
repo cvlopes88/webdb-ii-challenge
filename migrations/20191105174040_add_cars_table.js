@@ -4,7 +4,7 @@ exports.up = function(knex) {
 
 
     table.increments();
-
+    
     table.string('make', 128);
     table.string('model');
     table.string('milage');

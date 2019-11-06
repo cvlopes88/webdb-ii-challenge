@@ -1,14 +1,13 @@
 
-
-const express = require('express');
-
-const server = express();
+const server = require('./server.js');
 
 
-server.post('/api/cars', (req, res) => {
-    
-})
 
-server.listen(1000, () => {
-    console.log('\n*********** Server Running On Port 1000 *********** \n')
+
+const PORT = process.env.PORT || 4000;
+
+
+
+server.listen(PORT, () => {
+ console.log(`Listening on port ${PORT}...`);
 });
